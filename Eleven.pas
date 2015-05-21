@@ -22,6 +22,7 @@ Var
   bt,bt1:Button;
   li:ListBox;
   txt:TextBox;
+  bt:real;
 
 Procedure CreateAll;//создание элементов формы
   begin
