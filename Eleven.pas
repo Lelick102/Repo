@@ -10,7 +10,7 @@ Program eleven;
 uses FormsABC;
   
 type
-  mass=array[1..10] of integer;//объ€вление массива
+ // mass=array[1..10] of integer;//объ€вление массива
 
 Var
   f:file of integer;//объ€вление переменных
@@ -41,7 +41,7 @@ Procedure CreateAll;//создание элементов формы
     Vod1:=new IntegerField(' ');
   end;
   
-procedure WriteFile(x:mass;f:file of integer);//запись массива в файл
+{procedure WriteFile(x:mass;f:file of integer);//запись массива в файл
  var i:integer;
   begin;
   assign(f,'Mas.dat');
@@ -51,7 +51,7 @@ procedure WriteFile(x:mass;f:file of integer);//запись массива в файл
         write(f,x[i]);
       end;
      Close(f);
-  end;
+  end;}
   
 function ReadFile():string;//получение массива из файла
   var i,n:integer;
